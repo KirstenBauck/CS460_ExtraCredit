@@ -59,7 +59,7 @@ This tool allows users to analyze network routes by running traceroute commands 
 
 ## Example Workflow
 1. Enter `8.8.8.8` or a list of IPs, such as `8.8.8.8, 1.1.1.1`.
-  - The tool will execute the traceroute command and display:
-  - Each hop as a marker on the map.
+      - The tool will execute the traceroute command and display:
+      - Each hop as a marker on the map.
 2. Latency and IP information in pop-ups.
 3. Review the path visualization to analyze network behavior.
