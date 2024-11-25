@@ -17,17 +17,17 @@ This tool allows users to analyze network routes by running traceroute commands 
 
 ## Steps Used to Create This Tool
 1. **Backend Implementation:**
-  - Developed a Python Flask application to handle API requests and manage traceroute execution.
-  - Wrote a shell script (traceroute.sh) to execute traceroute commands and parse their output, accommodating differences between Linux and Windows traceroute utilities.
+    - Developed a Python Flask application to handle API requests and manage traceroute execution.
+    - Wrote a shell script (traceroute.sh) to execute traceroute commands and parse their output, accommodating differences between Linux and Windows traceroute utilities.
 2. **Frontend Development:**
-  - Designed an interactive web interface using HTML, CSS, and JavaScript.
-  - Integrated Leaflet.js for map visualization.
+    - Designed an interactive web interface using HTML, CSS, and JavaScript.
+    - Integrated Leaflet.js for map visualization.
 3. **Cross-Platform Support:**
-  - Added compatibility for both Linux and Windows traceroute commands (traceroute and tracert).
-  - Processed traceroute output in the shell script to handle OS-specific formats.
+    - Added compatibility for both Linux and Windows traceroute commands (traceroute and tracert).
+    - Processed traceroute output in the shell script to handle OS-specific formats.
 4. **Testing:**
-  - Tested on both operating systems to ensure compatibility.
-  - Verified robust handling of invalid IPs and network issues.
+    - Tested on both operating systems to ensure compatibility.
+    - Verified robust handling of invalid IPs and network issues.
 
 ---
 
@@ -39,6 +39,7 @@ This tool allows users to analyze network routes by running traceroute commands 
   pip install flask
   ```
 3. Ensure `traceroute` (Linux/Mac) or `tracert` (Windows) is available on your system.
+
 ### How to Use
 1. Clone the repository or download the project files.
 2. Open a terminal in the project directory.
