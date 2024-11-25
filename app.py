@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 import subprocess
+import platform
 import json
 
 app = Flask(__name__)
@@ -23,7 +24,7 @@ def traceroute():
     
     # Run the traceroute.sh script
     process = subprocess.run(
-        ['./traceroute.sh', *ips],
+        ['bash', './traceroute.sh', *ips] if platform.system() == 'Windows' else ['./traceroute.sh', *ips],
         # Capture scripts standard output
         stdout=subprocess.PIPE,
         # Capture script's error output
